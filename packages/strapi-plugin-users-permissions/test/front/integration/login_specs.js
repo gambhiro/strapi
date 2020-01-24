@@ -34,6 +34,7 @@ describe('Test login', () => {
 
         jwt = JSON.parse(win.localStorage.getItem('jwtToken'));
         userId = userInfo._id || userInfo.id;
+        // eslint-disable-next-line no-unused-expressions
         expect(win.localStorage.getItem('jwtToken')).to.be.ok;
       });
 
